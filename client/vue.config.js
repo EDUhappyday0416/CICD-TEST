@@ -32,7 +32,7 @@ let vueConfig = {
     // outputDir: process.env.NODE_ENV === 'production' ? '../htdocs/client' : '../htdocs/client/js',
     outputDir: '../htdocs/client/',
     //publicPath: vue 要使用靜態文件時要存取的資料夾
-    publicPath: '/client',
+    //publicPath: '/client',
     // 不產生sourceMap
     productionSourceMap: false,
     pages: pages,
