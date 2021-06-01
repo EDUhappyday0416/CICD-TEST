@@ -38,4 +38,4 @@ jobs:
         with:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }} # Settings > Secret 建立的 ACCESS_TOKEN
           branch: gh-pages # deploy 到 gh-pages 這個分支
-          folder: ../htdocs/client/ # build 後的資料夾
+          folder: htdocs/client/ # build 後的資料夾

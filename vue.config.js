@@ -17,7 +17,7 @@ function getEntry(globPath) {
 
         entries[pathname] = {
             entry: 'src/' + tmp[0] + '/' + tmp[1] + '/index.js',
-            filename: '../../application/views/mpa/' + tmp[1] + '.php',
+            filename: './application/views/mpa/' + tmp[1] + '.php',
             template: 'template.php',
             chunks: ['chunk-common', `chunk-${tmp[1]}-vendors`, `${tmp[1]}`]
         };
@@ -30,7 +30,7 @@ const pageKeys = Object.keys(pages)
 let vueConfig = {
     // outputDir: 在npm run build时 生成文件放置的目录 type:string, default:'dist'
     // outputDir: process.env.NODE_ENV === 'production' ? '../htdocs/client' : '../htdocs/client/js',
-    outputDir: '../htdocs/client/',
+    outputDir: 'htdocs/client/',
     //publicPath: vue 要使用靜態文件時要存取的資料夾
     //publicPath: '/client',
     // 不產生sourceMap
