@@ -17,7 +17,7 @@ function getEntry(globPath) {
 
         entries[pathname] = {
             entry: 'src/' + tmp[0] + '/' + tmp[1] + '/index.js',
-            filename: './application/views/mpa/' + tmp[1] + '.php',
+            filename: './views/mpa/' + tmp[1] + '.php',
             template: 'template.php',
             chunks: ['chunk-common', `chunk-${tmp[1]}-vendors`, `${tmp[1]}`]
         };
